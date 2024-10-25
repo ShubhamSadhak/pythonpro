@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/education">Educational Background</a></li>
+                <li><a href="/experience">Experience</a></li>
+                <li><a href="/publications">Publications</a></li>
+                <li><a href="/awards">Awards & Achievements</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/membership">Membership</a></li>
+                <li><a href="/research">Research Thrust Area</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/presentations">Presentations</a></li>
+                <li><a href="/courses">Courses Completed</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Ahali Saha.</p>
+    </footer>
+</body>
+</html>
